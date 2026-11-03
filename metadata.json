@@ -1,0 +1,8 @@
+{
+  "name": "Traccar GPS Tracking System",
+  "description": "Modern web interface for the Traccar GPS tracking platform connected to the official demo server.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

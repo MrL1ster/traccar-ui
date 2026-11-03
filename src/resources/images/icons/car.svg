@@ -1,0 +1,45 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="carShadow" x="8" y="4" width="48" height="58" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0f172a" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="carBody" x1="20" y1="8" x2="44" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="carGlass" x1="22" y1="18" x2="42" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#carShadow)">
+    <!-- Tires -->
+    <rect x="15" y="15" width="4" height="9" rx="2" fill="#1e293b"/>
+    <rect x="45" y="15" width="4" height="9" rx="2" fill="#1e293b"/>
+    <rect x="15" y="41" width="4" height="9" rx="2" fill="#1e293b"/>
+    <rect x="45" y="41" width="4" height="9" rx="2" fill="#1e293b"/>
+    <!-- Main Car Body (pointing North / Up) -->
+    <path d="M22 10C25 7.5 39 7.5 42 10C45.5 13 46.5 18 46.5 25V47C46.5 52.5 44 55.5 39.5 56H24.5C20 55.5 17.5 52.5 17.5 47V25C17.5 18 18.5 13 22 10Z" fill="url(#carBody)" stroke="#64748b" stroke-width="1.5"/>
+    <!-- Side Mirrors -->
+    <path d="M17.5 23L13.5 24.5C13 24.8 13 26.2 14 26.5L17.5 26Z" fill="#f8fafc" stroke="#64748b" stroke-width="1"/>
+    <path d="M46.5 23L50.5 24.5C51 24.8 51 26.2 50 26.5L46.5 26Z" fill="#f8fafc" stroke="#64748b" stroke-width="1"/>
+    <!-- Hood Crease Lines -->
+    <path d="M23 11.5L24.5 20M41 11.5L39.5 20" stroke="#cbd5e1" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Front Windshield -->
+    <path d="M21 22.5C24.5 20.5 39.5 20.5 43 22.5L41 29.5C37.5 28.5 26.5 28.5 23 29.5L21 22.5Z" fill="url(#carGlass)"/>
+    <!-- Rear Window -->
+    <path d="M23 43.5C26.5 44.2 37.5 44.2 41 43.5L42.5 49.5C39 51 25 51 21.5 49.5L23 43.5Z" fill="url(#carGlass)"/>
+    <!-- Side Windows -->
+    <path d="M19.5 25L21.8 30.5V42L19.5 47V25Z" fill="#334155"/>
+    <path d="M44.5 25L42.2 30.5V42L44.5 47V25Z" fill="#334155"/>
+    <!-- Roof Panel -->
+    <rect x="23" y="29.5" width="18" height="14" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <!-- Headlights -->
+    <path d="M20.5 11.5C21.8 10 24.5 9.5 26 10.2L25 12.2C23.2 12 21.5 12.3 20.5 11.5Z" fill="#fef08a"/>
+    <path d="M43.5 11.5C42.2 10 39.5 9.5 38 10.2L39 12.2C40.8 12 42.5 12.3 43.5 11.5Z" fill="#fef08a"/>
+    <!-- Taillights -->
+    <rect x="20.5" y="54" width="6.5" height="2" rx="1" fill="#ef4444"/>
+    <rect x="37" y="54" width="6.5" height="2" rx="1" fill="#ef4444"/>
+  </g>
+</svg>
